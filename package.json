@@ -1,1 +1,40 @@
-{     "devDependencies": {         "simple-statistics": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-simple-statistics",     "homepage": "https://github.com/npmtest/node-npmtest-simple-statistics",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-simple-statistics.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "test coverage for [simple-statistics (v3.0.0)](https://github.com/simple-statistics/simple-statistics#readme) [![npm package](https://img.shields.io/npm/v/npmtest-simple-statistics.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-simple-statistics) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-simple-statistics.svg)](https://travis-ci.org/npmtest/node-npmtest-simple-statistics)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "simple-statistics": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-simple-statistics",
+    "keywords": [
+        "coverage",
+        "test",
+        "simple-statistics"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_simple_statistics.js",
+    "name": "npmtest-simple-statistics",
+    "nameAlias": "npmtest_simple_statistics",
+    "nameOriginal": "npmtest-simple-statistics",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-simple-statistics.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
