@@ -1,4 +1,7 @@
-# test coverage for  [simple-statistics (v3.0.0)](https://github.com/simple-statistics/simple-statistics#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-simple-statistics.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-simple-statistics) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-simple-statistics.svg)](https://travis-ci.org/npmtest/node-npmtest-simple-statistics)
+# npmtest-simple-statistics
+
+#### basic test coverage for  [simple-statistics (v3.0.0)](https://github.com/simple-statistics/simple-statistics#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-simple-statistics.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-simple-statistics) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-simple-statistics.svg)](https://travis-ci.org/npmtest/node-npmtest-simple-statistics)
+
 #### Simple Statistics
 
 [![NPM](https://nodei.co/npm/simple-statistics.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/simple-statistics)
@@ -7,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-simple-statistics/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-simple-statistics/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-simple-statistics/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-simple-statistics/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-simple-statistics/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-simple-statistics/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-simple-statistics/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-simple-statistics/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-simple-statistics/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-simple-statistics/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-simple-statistics/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-simple-statistics/build/coverage.html/index.html)
 
@@ -107,7 +110,8 @@
         "test": "are-we-flow-yet src && flow check src && eslint index.js src/*.js test/*.js && tap --coverage test/*.js && npm run jsdoctest",
         "test-sauce": "node scripts/browser_test.js"
     },
-    "version": "3.0.0"
+    "version": "3.0.0",
+    "bin": {}
 }
 ```
 
